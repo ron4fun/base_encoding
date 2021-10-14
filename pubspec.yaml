@@ -1,0 +1,12 @@
+author: "Mbadiwe Nnaemeka Ronald <ron2tele@gmail.com>"
+name: base_encoding
+description: base_encoding is a compact and standalone encoding library that provides at the moment support for encoding and decoding various bases such as Base16, Base32 (various variants), Base58 (various variants) and Base64 (various variants).
+version: 1.0.0
+homepage: https://github.com/ron4fun/base_encoding
+repository: https://github.com/ron4fun/base_encoding
+
+environment:
+  sdk: '>=2.8.1 <3.0.0'
+
+dev_dependencies:
+  test: ^1.14.4
