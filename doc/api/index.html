@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.9.14-dev">
+  <meta name="description" content="base_encoding API docs, for the Dart programming language.">
+  <title>base_encoding - Dart API docs</title>
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li class="self-crumb">base_encoding</li>
+          </ol>
+          <div class="self-name">base_encoding</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">package</span> base_encoding
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="index.html#libraries">Libraries</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>base_encoding</h5>
+
+
+    <ol>
+      <li class="section-title"><a href="index.html#libraries">Libraries</a></li>
+      <li><a href="base_encoding/base_encoding-library.html">base_encoding</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h2>base_encoding <a href="https://github.com/ron4fun/base_encoding/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a> <a href="https://travis-ci.org/ron4fun/base_encoding"><img alt="Build Status" src="https://travis-ci.org/ron4fun/base_encoding.svg?branch=master"></a></h2>
+<p><strong><code>base_encoding</code></strong> is a compact and standalone encoding library that provides at the moment support for encoding and decoding various bases such as Base16, Base32 (various variants), Base58 (various variants) and Base64 (various variants).</p>
+<p><strong>Supported Encodings:</strong></p>
+<pre class="prettyprint language-dart"><code>Base64: Default, DefaultNoPadding, UrlEncoding, XmlEncoding, RegExEncoding and FileEncoding alphabets 
+(and any custom alphabet you might have)
+
+Base58: Bitcoin, Ripple and Flickr alphabets (and any custom alphabet you might have)
+
+Base32: RFC 4648, Crockford and Extended Hex (BASE32-HEX) alphabets with Crockford character substitution 
+(or any other custom alphabets you might want to use)   
+
+Base16: An experimental hexadecimal encoder/decoder.
+</code></pre>
+<p><strong>Usage Examples.</strong></p>
+<pre class="language-dart prettyprint"><code class="language-dart">import 'package:base_encoding/base_encoding.dart';
+
+
+main() {
+    final base32 = BaseEncoding.CreateBase32Crockford();
+
+    String rawData = "foobar";
+
+    var output = base32.Encode(rawData.codeUnits, false);
+
+    print('Output: ${output}'); // Output: CSQPYRK1E8
+}
+</code></pre>
+<p><strong>License</strong></p>
+<p>This "Software" is Licensed Under  <strong><code>MIT License (MIT)</code></strong> .</p>
+<h4>Tip Jar</h4><ul><li>:dollar: <strong>Bitcoin</strong>: <code>1Mcci95WffSJnV6PsYG7KD1af1gDfUvLe6</code></li></ul>
+      </section>
+      
+
+      <section class="summary" id="libraries">
+        <h2>Libraries</h2>
+        <dl>
+            <dt id="base_encoding">
+              <span class="name"><a href="base_encoding/base_encoding-library.html">base_encoding</a></span>
+            </dt>
+            <dd>
+              <p></p>
+            </dd>
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+
+  </div><!--/.sidebar-offcanvas-right-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          base_encoding 1.0.0
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>
