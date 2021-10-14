@@ -1,4 +1,4 @@
-## base_encoding [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ron4fun/base_encoding/blob/master/LICENSE) [![Build Status](https://travis-ci.com/ron4fun/base_encoding.svg?branch=master)](https://travis-ci.com/ron4fun/base_encoding)
+## base_encoding [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ron4fun/base_encoding/blob/master/LICENSE) [![Build Status](https://app.travis-ci.com/ron4fun/base_encoding.svg?branch=master)](https://app.travis-ci.com/ron4fun/base_encoding)
 **`base_encoding`** is a compact and standalone encoding library that provides at the moment support for encoding and decoding various bases such as Base16, Base32 (various variants), Base58 (various variants) and Base64 (various variants).
 
 **Supported Encodings:**
