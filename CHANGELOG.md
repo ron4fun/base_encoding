@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - Updated README
+
+## 1.0.2
+
+- Exported classes for custom alphabet extension 
