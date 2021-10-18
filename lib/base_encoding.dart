@@ -23,3 +23,6 @@ library base_encoding;
 
 export 'src/base_encoding_base.dart';
 export 'src/utils/types.dart';
+export 'src/bases/base32Alphabet.dart';
+export 'src/bases/base58Alphabet.dart';
+export 'src/bases/base64Alphabet.dart';
